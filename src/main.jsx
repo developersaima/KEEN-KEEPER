@@ -7,6 +7,8 @@ import HomePage from "./components/HomePage.jsx";
 import Timeline from "./components/Timeline.jsx";
 import Stats from "./components/Stats.jsx";
 import FriendDetailes from "./components/FriendDetailes.jsx";
+import NoPage from "./components/NoPage";
+
 
 const router = createBrowserRouter([
   {

@@ -3,7 +3,6 @@ import Footer from "./components/Footer";
 import { Outlet } from "react-router";
 import { TimelineProvider } from "./context/TimelineContext";
 import { Toaster } from "react-hot-toast";
-import NoPage from "./components/NoPage";
 
 
 
@@ -15,6 +14,7 @@ const App = () => {
         <Outlet />
       </main>
       <Footer />
+      
       <Toaster position="top-center" reverseOrder={false} />
     </TimelineProvider>
   );
