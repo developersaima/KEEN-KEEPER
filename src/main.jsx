@@ -19,6 +19,10 @@ const router = createBrowserRouter([
       { path: "friend-detailes/:id", element: <FriendDetailes /> },
     ],
   },
+  {
+    path: "*",
+    element: <NoPage />,
+  },
 ]);
 createRoot(document.getElementById("root")).render(
   <StrictMode>

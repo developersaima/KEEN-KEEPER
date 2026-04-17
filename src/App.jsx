@@ -3,6 +3,9 @@ import Footer from "./components/Footer";
 import { Outlet } from "react-router";
 import { TimelineProvider } from "./context/TimelineContext";
 import { Toaster } from "react-hot-toast";
+import NoPage from "./components/NoPage";
+
+
 
 const App = () => {
   return (
