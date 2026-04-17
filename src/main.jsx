@@ -16,7 +16,7 @@ const router = createBrowserRouter([
       { index: true, Component: HomePage },
       { path: "timeline", Component: Timeline },
       { path: "stats", Component: Stats },
-      // { path: "friend-detailes/:id", element: <FriendDetailes /> },
+      
     ],
   },
 ]);
