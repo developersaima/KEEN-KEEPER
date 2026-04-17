@@ -1,18 +1,19 @@
 import Navbar from "./components/Navbar";
-import { Outlet } from "react-router-dom";
 import Footer from "./components/Footer";
+import { Outlet } from "react-router";
+import { TimelineProvider } from "./context/TimelineContext";
+import { Toaster } from "react-hot-toast";
 
 const App = () => {
   return (
-    <div>
+    <TimelineProvider>
       <Navbar />
-
-      <main className="mt-16 px-4">
-
+      <main className="my-15">
         <Outlet />
       </main>
-      <Footer/>
-    </div>
+      <Footer />
+      <Toaster position="top-center" reverseOrder={false} />
+    </TimelineProvider>
   );
 };
 
